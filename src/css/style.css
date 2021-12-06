@@ -1,0 +1,89 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+.nav-link:hover,
+.active {
+  background-color: rgb(128, 119, 119, 0.4);
+}
+.main-sidebar {
+  margin-top: 1rem;
+  height: 100vh;
+  transition: all 1s ease;
+  background-color: rgb(24, 4, 36);
+  overflow: hidden;
+  white-space: nowrap;
+  position: fixed;
+}
+
+.main-content {
+  transition: all 1s ease;
+  position: absolute;
+  right: 0;
+}
+
+.navbar {
+  width: 100vw;
+  position: fixed;
+  z-index: 10;
+}
+
+.hide-text-menu {
+  visibility: hidden;
+}
+
+.sub-menu {
+  background-color: antiquewhite;
+  list-style-type: none;
+  transition: all 1s ease;
+}
+
+.undisplay {
+  display: none;
+}
+
+.ondisplay {
+  display: block;
+}
+
+.angle-symbol {
+  transition: all 200ms ease;
+  position: absolute;
+  right: 1rem;
+}
+.angle-symbol-down {
+  transform: rotate(-90deg);
+}
+
+.text-menu {
+  position: absolute;
+  left: 4rem;
+}
+
+.sub-text-menu {
+  position: absolute;
+  left: 6rem;
+}
+
+.sub-menu-li:hover {
+  background-color: rgba(19, 12, 12, 0.24);
+  cursor: pointer;
+}
+
+.card-icon {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(-20%, -50%);
+  opacity: 0.4;
+}
+
+.card-footer-info {
+  background-color: rgba(2, 77, 100, 0.925);
+}
+.card-footer-success {
+  background-color: rgba(2, 100, 23, 0.945);
+}
+.card-footer-warning {
+  background-color: rgba(114, 103, 1, 0.945);
+}

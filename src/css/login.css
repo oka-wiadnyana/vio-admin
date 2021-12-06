@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(230, 209, 209);
+}
+
+.container {
+  height: 100vh;
+}
+
+.login-el {
+  height: 70vh;
+  box-shadow: 0.5rem 0.5rem 0.3rem rgba(53, 52, 52, 0.233);
+}
+
+.right-login {
+  border-radius: 10% 0 0 10%;
+  background-image: url("../../assets/img/wave-color.svg");
+  background-size: cover;
+}
+
+.left-login {
+  border-radius: 0 10% 10% 0;
+  background-color: #fff;
+}
+
+.login-el-text {
+  border: solid rgb(255, 255, 255);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 2rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 3vmin;
+  color: rgb(255, 255, 255);
+}
+
+.login-text {
+  font-family: "Roboto", sans-serif;
+  font-size: 5vmin;
+  font-weight: bold;
+  color: rgb(22, 109, 150);
+  font-family: "Bebas Neue", cursive;
+}
+
+input {
+  border-radius: 2rem;
+  padding: 0.4rem;
+  width: 80%;
+}
+
+.btn-login {
+  border-radius: 2rem;
+  display: block;
+  width: 80%;
+  border: none;
+  background-image: linear-gradient(
+    90deg,
+    rgb(233, 124, 124),
+    rgb(66, 125, 180)
+  );
+  padding: 0.2rem 0.3rem;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  font-family: "Bebas Neue", cursive;
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+.signup-anchor {
+  font-family: "Bebas Neue", cursive;
+  font-size: 0.7rem;
+}

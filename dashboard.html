@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="src/vendor/bootstrap-4.3.1-dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <!-- Fontawesome -->
+    <link
+      href="src/vendor/fontawesome-free-5.15.4-web/css/all.css"
+      rel="stylesheet"
+    />
+    <!--load all styles -->
+
+    <!-- My Css -->
+    <link rel="stylesheet" href="src/css/style.css" />
+
+    <!-- jsCalendar v1.4.4 Javascript and CSS from local -->
+    <script src="src/vendor/jsCalender/source/jsCalendar.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="src/vendor/jsCalender/source/jsCalendar.min.css"
+    />
+
+    <!-- Chart JS -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.1/chart.min.js"></script>
+
+    <title>Vio-Admin</title>
+  </head>
+  <body>
+    <!-- Begin Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+      <a class="navbar-brand ml-2 hamburger" href=""
+        ><i class="fas fa-bars"></i
+      ></a>
+      <a class="navbar-brand d-none d-md-block" href="#"
+        ><i class="fab fa-dashcube"></i> VIO GANADIPA |
+        <strong>SIDE BAR PROJECT</strong></a
+      >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <form class="form-inline my-2 my-lg-0 ml-auto">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+            Search
+          </button>
+        </form>
+        <div class="icons ml-4">
+          <h5>
+            <i
+              class="fas fa-envelope mr-3"
+              data-toggle="tooltip"
+              title="Surat masuk"
+            ></i>
+            <i
+              class="fas fa-bell mr-3"
+              data-toggle="tooltip"
+              title="Notifikasi"
+            ></i>
+            <i
+              class="fas fa-sign-out-alt mr-3"
+              data-toggle="tooltip"
+              title="Sign out"
+            ></i>
+          </h5>
+        </div>
+      </div>
+    </nav>
+
+    <!-- End Navbar -->
+
+    <div class="row no-gutters">
+      <div class="col-3 main-sidebar p-2">
+        <ul class="nav flex-column mt-5">
+          <li class="nav-item ml-2">
+            <a class="nav-link menu-link active text-white" href="#"
+              ><i class="fas fa-tachometer-alt icon-menu"></i
+              ><span class="d-none d-md-inline-block text-menu"
+                >Dashboard</span
+              ></a
+            >
+          </li>
+          <li class="nav-item ml-2">
+            <a class="nav-link menu-link text-white" href="#"
+              ><i class="fas fa-user-tie"></i
+              ><span class="d-none d-md-inline-block text-menu"
+                >Pegawai</span
+              ></a
+            >
+          </li>
+          <li class="nav-item ml-2">
+            <a class="nav-link text-white sub-menu-btn" href="#">
+              <i class="fas fa-user-ninja"></i
+              ><span class="d-none d-md-inline-block text-menu">Honorer </span>
+              <i
+                class="angle-symbol fas fa-angle-left d-none d-md-inline-block"
+              ></i>
+            </a>
+
+            <ul class="sub-menu undisplay">
+              <li class="sub-menu-li">
+                <a class="text-dark sub-menu-anchor" href="">
+                  <i class="fas fa-broom"></i
+                  ><span class="d-none d-md-inline-block sub-text-menu"
+                    >CS</span
+                  ></a
+                >
+              </li>
+              <li class="sub-menu-li">
+                <a class="text-dark sub-menu-anchor" href="">
+                  <i class="fas fa-shield-alt"></i
+                  ><span class="d-none d-md-inline-block sub-text-menu"
+                    >Satpam</span
+                  >
+                </a>
+              </li>
+              <li class="sub-menu-li">
+                <a class="text-dark sub-menu-anchor" href="">
+                  <i class="fas fa-car"></i
+                  ><span class="d-none d-md-inline-block sub-text-menu"
+                    >Sopir</span
+                  >
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item ml-2">
+            <a class="nav-link text-white sub-menu-btn" href="#">
+              <i class="fas fa-building"></i
+              ><span class="d-none d-md-inline-block text-menu"
+                >StakeHolder
+              </span>
+              <i
+                class="angle-symbol fas fa-angle-left d-none d-md-inline-block"
+              ></i>
+            </a>
+            <ul class="sub-menu undisplay">
+              <li class="sub-menu-li">
+                <a class="text-dark sub-menu-anchor" href="">
+                  <i class="fas fa-user-shield"></i
+                  ><span class="d-none d-md-inline-block sub-text-menu"
+                    >Kepolisian</span
+                  >
+                </a>
+              </li>
+              <li class="sub-menu-li">
+                <a class="text-dark sub-menu-anchor" href="">
+                  <i class="fas fa-door-open"></i
+                  ><span class="d-none d-md-inline-block sub-text-menu"
+                    >Kejaksaan</span
+                  >
+                </a>
+              </li>
+              <li class="sub-menu-li">
+                <a class="text-dark sub-menu-anchor" href="">
+                  <i class="fas fa-dungeon"></i
+                  ><span class="d-none d-md-inline-block sub-text-menu"
+                    >PPNS</span
+                  >
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <!-- End Sidebar -->
+
+      <!-- Main Content -->
+      <div class="col-9 p-3 main-content">
+        <div class="row">
+          <div class="col">
+            <h3><i class="fas fa-tachometer-alt mr-2"></i>DASHBOARD</h3>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-md-4">
+            <div class="card text-white bg-info">
+              <div class="card-body p-0">
+                <div class="p-3">
+                  <i class="fas fa-users card-icon display-4"></i>
+                  <h5 class="card-title">Jumlah Pegawai</h5>
+                  <p class="card-text display-4">120</p>
+                </div>
+                <div class="card-footer card-footer-info text-center">
+                  <a href="#" class="card-link text-reset">Detail</a>
+                  <i class="fas fa-arrow-circle-right"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card text-white bg-success">
+              <div class="card-body p-0">
+                <div class="p-3">
+                  <i class="fas fa-users card-icon display-4"></i>
+                  <h5 class="card-title">Jumlah Honorer</h5>
+                  <p class="card-text display-4">10</p>
+                </div>
+                <div class="card-footer card-footer-success text-center">
+                  <a href="#" class="card-link text-reset">Detail</a>
+                  <i class="fas fa-arrow-circle-right"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card text-white bg-warning">
+              <div class="card-body p-0">
+                <div class="p-3">
+                  <i class="fas fa-users card-icon display-4"></i>
+                  <h5 class="card-title">Jumlah StakeHolder</h5>
+                  <p class="card-text display-4">120</p>
+                </div>
+                <div class="card-footer card-footer-warning text-center">
+                  <a href="#" class="card-link text-reset">Detail</a>
+                  <i class="fas fa-arrow-circle-right"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-3">
+          <div class="col-md-6 d-flex justify-content-center">
+            <div
+              class="auto-jsCalendar material-theme"
+              data-month-format="month YYYY"
+            ></div>
+          </div>
+          <div class="col-md-6 d-flex justify-content-center">
+            <canvas id="myChart" width="400" height="400"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Main Content -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="src/vendor/bootstrap-4.3.1-dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="src/script/script.js"></script>
+
+    <!-- Chart initiation -->
+
+    <script>
+      const ctx = document.getElementById("myChart");
+      const myChart = new Chart(ctx, {
+        type: "doughnut",
+        data: {
+          labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+          datasets: [
+            {
+              label: "# of Votes",
+              data: [12, 19, 3, 5, 2, 3],
+              backgroundColor: [
+                "rgba(255, 99, 132, 0.2)",
+                "rgba(54, 162, 235, 0.2)",
+                "rgba(255, 206, 86, 0.2)",
+                "rgba(75, 192, 192, 0.2)",
+                "rgba(153, 102, 255, 0.2)",
+                "rgba(255, 159, 64, 0.2)",
+              ],
+              borderColor: [
+                "rgba(255, 99, 132, 1)",
+                "rgba(54, 162, 235, 1)",
+                "rgba(255, 206, 86, 1)",
+                "rgba(75, 192, 192, 1)",
+                "rgba(153, 102, 255, 1)",
+                "rgba(255, 159, 64, 1)",
+              ],
+              borderWidth: 1,
+            },
+          ],
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true,
+            },
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
