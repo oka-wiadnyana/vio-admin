@@ -7,12 +7,12 @@ body {
   background-color: rgb(230, 209, 209);
 }
 
-.container {
+.wrapper {
   height: 100vh;
 }
 
 .login-el {
-  height: 70vh;
+  height: 25rem;
   box-shadow: 0.5rem 0.5rem 0.3rem rgba(53, 52, 52, 0.233);
 }
 
@@ -22,11 +22,21 @@ body {
   background-size: cover;
 }
 
-.left-login {
-  border-radius: 0 10% 10% 0;
-  background-color: #fff;
+@media (max-width: 768px) {
+  .left-login {
+    border-radius: 10% 10% 10% 10%;
+  }
 }
 
+@media (min-width: 769px) {
+  .left-login {
+    border-radius: 0 10% 10% 0;
+  }
+}
+
+.left-login {
+  background-color: #fff;
+}
 .login-el-text {
   border: solid rgb(255, 255, 255);
   position: absolute;
