@@ -23,6 +23,9 @@ body {
 }
 
 @media (max-width: 768px) {
+  .login-el {
+    margin: 0 0.8rem;
+  }
   .left-login {
     border-radius: 10% 10% 10% 10%;
   }
